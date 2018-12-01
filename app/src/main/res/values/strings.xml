@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="bitnami_server_url">http://13.59.167.44:80/parse/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="bitnami_app_id">4e61d8aaf8acfea9b9b3bd7357baa5fd11e8dfb2</string>
+    <string name="bitnami_client_key">d3e8d5af36240ac80abe96c5596db787ecae96ce</string>
+    <string name="title_activity_rider">Map</string>
+</resources>
