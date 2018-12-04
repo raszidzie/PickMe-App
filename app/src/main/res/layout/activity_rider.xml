@@ -23,5 +23,16 @@
         android:onClick="findDriver"
         android:text="OtoStop" />
 
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/findDriverButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="-1dp"
+        android:onClick="logout"
+        android:text="Log Out" />
+
 
 </RelativeLayout>

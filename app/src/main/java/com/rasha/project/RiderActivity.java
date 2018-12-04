@@ -2,6 +2,7 @@ package com.rasha.project;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -40,6 +41,14 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
     LocationListener locationListener;
     Button findDriverButton;
     Boolean requestActive = false;
+
+    public void logout (View view){
+
+        ParseUser.logOut();
+
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+    }
 
     public void findDriver(View view) {
 

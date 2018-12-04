@@ -6,4 +6,6 @@
     <string name="bitnami_app_id">4e61d8aaf8acfea9b9b3bd7357baa5fd11e8dfb2</string>
     <string name="bitnami_client_key">d3e8d5af36240ac80abe96c5596db787ecae96ce</string>
     <string name="title_activity_rider">Map</string>
+    <string name="title_activity_driver_location">Map</string>
+    <string name="title_activity_requests">Map</string>
 </resources>
