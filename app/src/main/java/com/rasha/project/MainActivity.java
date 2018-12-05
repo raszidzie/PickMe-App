@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
+
         if(ParseUser.getCurrentUser()== null) {
 
             ParseAnonymousUtils.logIn((new LogInCallback() {

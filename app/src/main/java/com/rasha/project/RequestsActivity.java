@@ -1,8 +1,11 @@
 package com.rasha.project;
 
+import android.location.Criteria;
+import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -45,8 +48,19 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Array;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -63,7 +77,6 @@ public class RequestsActivity extends FragmentActivity implements OnMapReadyCall
     ArrayList<String> requests = new ArrayList<String>();
     ArrayList<Double> requestLatitudes = new ArrayList<Double>();
     ArrayList<Double> requestLongitudes = new ArrayList<Double>();
-    ArrayAdapter arrayAdapter;
 
 
     public void updateMap(Location location) {
@@ -159,11 +172,19 @@ public class RequestsActivity extends FragmentActivity implements OnMapReadyCall
         mapFragment.getMapAsync(this);
 
 
+
+
+
+
     }
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+
+
+
 
 
 
